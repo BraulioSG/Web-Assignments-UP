@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="piet.css" />
+        <title>Piet</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box b1 r1" style="--top: 0px"></div>
+            <div class="box b2 r2" style="--top: 0px"></div>
+            <div class="box b3 r3" style="--top: 0px"></div>
+            <div class="box b4 r4" style="--top: 0px"></div>
+            <div class="box b5 r5" style="--top: 0px"></div>
+
+            <div class="box b6 r3" style="--top: var(--s-row)"></div>
+            <div class="box b7 r4" style="--top: var(--s-row)"></div>
+            <div class="box b8 r5" style="--top: var(--s-row)"></div>
+
+            <div class="box b9 r1" style="--top: var(--b-row)"></div>
+            <div class="box ba r2" style="--top: var(--b-row)"></div>
+            <div class="box bb r3" style="--top: var(--b-row)"></div>
+            <div class="box bc r4" style="--top: var(--b-row)"></div>
+            <div class="box bd r5" style="--top: var(--b-row)"></div>
+            <div
+                class="box be r1"
+                style="--top: calc(var(--b-row) + var(--s-row))"
+            ></div>
+            <div
+                class="box bf r2"
+                style="--top: calc(var(--b-row) + var(--s-row))"
+            ></div>
+            <div
+                class="box bf r3"
+                style="--top: calc(var(--b-row) + var(--s-row))"
+            ></div>
+        </div>
+    </body>
+</html>

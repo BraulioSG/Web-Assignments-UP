@@ -1,0 +1,99 @@
+:root {
+    --yellow: #e1ad01;
+    --blue: #063971;
+    --red: #cb0133;
+    --s-colum: 100px;
+    --b-colum: 420px;
+    --s-row: 150px;
+    --b-row: calc(var(--b-colum) + var(--s-row));
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+body {
+    background-color: #f8f8ff;
+}
+
+.box {
+    position: absolute;
+    top: var(--top);
+    border: 5px solid black;
+}
+
+.r1 {
+    left: 0;
+}
+
+.r2 {
+    left: calc(var(--s-colum));
+}
+
+.r3 {
+    left: calc(var(--s-colum) + var(--b-colum));
+}
+
+.r4 {
+    left: calc(var(--s-colum) + var(--b-colum) + var(--s-colum));
+}
+
+.r5 {
+    left: calc(
+        var(--s-colum) + var(--b-colum) + var(--s-colum) + var(--b-colum)
+    );
+}
+.r4,
+.r1,
+.r3 {
+    width: var(--s-colum);
+}
+
+.r2,
+.r4,
+.r5 {
+    width: var(--b-colum);
+}
+
+.b1,
+.b2 {
+    height: var(--b-row);
+}
+
+.b3,
+.b4,
+.b5 {
+    height: var(--s-row);
+}
+
+.b6,
+.b7,
+.b8 {
+    height: var(--b-colum);
+}
+
+.b9,
+.ba,
+.bb,
+.be,
+.bf {
+    height: var(--s-row);
+}
+
+.bc,
+.bd {
+    height: calc(var(--s-row) * 2);
+}
+
+.b5 {
+    background-color: var(--yellow);
+}
+.b7 {
+    background-color: var(--red);
+}
+.ba {
+    background-color: var(--blue);
+}
