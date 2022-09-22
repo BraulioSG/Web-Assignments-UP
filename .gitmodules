@@ -1,0 +1,3 @@
+[submodule "summer_inst_basic"]
+	path = summer_inst_basic
+	url = https://github.com/aztek56/summer_inst_basic.git
